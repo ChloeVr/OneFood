@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+html, body {
+  overflow: hidden;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.P2 {
+  padding-top: 10px;
+  font-size: 30px;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.pijl {
+  padding: 20px;
+}
+
+.cirkel {
+  padding: 20px;
+}
+
+.cirkel2 {
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+
+.content-subtitle1 {
+  color: black;
+  text-shadow: 1px 1px white;
+  padding: 5px;
+}
+
+.content-subtitle {
+  color: black;
+  text-shadow: 1px 1px white;
+  padding: 10px;
+  background-color: white;
+}
+
+.content-title {
+  color: black;
+  padding: 10px;
+  background-color: white;
+}
+
+.content-title1 {
+  color: black;
+}
+
+.banner {
+  background-color: white;
+  padding: 10px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 20px;
+}
+
+.banner a {
+  color: black;
+  text-decoration: none;
+  font-family: avenir next condensed;
+}
+
+ul {
+  width: 50%;
+  margin: auto;
+  padding-left: 40px;
+}
+
+ul li {
+  display: inline;
+  padding-right: 25px;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 200vh;
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.background:first-child {
+  background-image: url(http://s33.postimg.org/y242yekov/Sla1.jpg);
+  -webkit-transform: translateY(-50vh);
+          transform: translateY(-50vh);
+}
+.background:first-child .content-wrapper {
+  -webkit-transform: translateY(50vh);
+          transform: translateY(50vh);
+}
+.background:nth-child(2) {
+  background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
+}
+.background:nth-child(3) {
+  background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
+}
+.background:nth-child(4) {
+  background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
+}
+
+/* Set stacking context of slides */
+.background:nth-child(1) {
+  z-index: 4;
+}
+
+.background:nth-child(2) {
+  z-index: 3;
+}
+
+.background:nth-child(3) {
+  z-index: 2;
+}
+
+.background:nth-child(4) {
+  z-index: 1;
+}
+
+.content-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: #fff;
+  font-family: Avenir next condensed;
+  text-transform: uppercase;
+  -webkit-transform: translateY(500vh);
+          transform: translateY(500vh);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+  transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.content-title {
+  font-size: 12vh;
+  line-height: 1.4;
+}
+
+.background.up-scroll {
+  -webkit-transform: translate3d(0, -50vh, 0);
+          transform: translate3d(0, -50vh, 0);
+}
+.background.up-scroll .content-wrapper {
+  -webkit-transform: translateY(50vh);
+          transform: translateY(50vh);
+}
+.background.up-scroll + .background {
+  -webkit-transform: translate3d(0, 100vh, 0);
+          transform: translate3d(0, 100vh, 0);
+}
+.background.up-scroll + .background .content-wrapper {
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+}
+
+.background.down-scroll {
+  -webkit-transform: translate3d(0, -200vh, 0);
+          transform: translate3d(0, -200vh, 0);
+}
+.background.down-scroll .content-wrapper {
+  -webkit-transform: translateY(500vh);
+          transform: translateY(500vh);
+}
+.background.down-scroll + .background:not(.down-scroll) {
+  -webkit-transform: translate3d(0, -50vh, 0);
+          transform: translate3d(0, -50vh, 0);
+}
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+  -webkit-transform: translateY(50vh);
+          transform: translateY(50vh);
+} 

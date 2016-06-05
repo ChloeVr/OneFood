@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-html, body {
+html, body
+{
   overflow: hidden;
   color: black;
   text-shadow: 1px 1px white;
@@ -46,23 +46,6 @@ html, body {
 
 .content-title1 {
   color: black;
-}
-
-.banner {
-  background-color: white;
-  padding: 10px 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  margin-top: 20px;
-}
-
-.banner a {
-  color: black;
-  text-decoration: none;
-  font-family: avenir next condensed;
 }
 
 ul {
@@ -122,20 +105,30 @@ ul li {
   background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
 }
 
+.background:nth-child(5) {
+  background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
+}
+
+
 /* Set stacking context of slides */
+
 .background:nth-child(1) {
-  z-index: 4;
+  z-index: 5;
 }
 
 .background:nth-child(2) {
-  z-index: 3;
+  z-index: 4;
 }
 
 .background:nth-child(3) {
-  z-index: 2;
+  z-index: 3;
 }
 
 .background:nth-child(4) {
+  z-index: 2;
+}
+
+.background:nth-child(5) {
   z-index: 1;
 }
 
@@ -203,4 +196,4 @@ ul li {
 .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
   -webkit-transform: translateY(50vh);
           transform: translateY(50vh);
-} 
+}

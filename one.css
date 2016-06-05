@@ -48,29 +48,6 @@ html, body {
   margin: -5px;
 }
 
-.content-subtitle4 {
-  color: black;
-  text-shadow: 1px 1px white;
-  padding: 10px;
-  background-color: white;
-  margin: -5px;
-}
-
-.content-subtitle5 {
-  color: black;
-  text-shadow: 1px 1px white;
-  padding: 10px;
-  padding-top: -5px;
-  background-color: white;
-  margin: -5px;}
-
-.content-subtitle {
-  color: black;
-  text-shadow: 1px 1px white;
-  padding: 10px;
-  background-color: white;
-}
-
 .content-title {
   color: black;
   padding: 5px;
@@ -80,7 +57,6 @@ html, body {
 .content-title1 {
   color: black;
 }
-
 
 .background {
   background-size: cover;
@@ -213,4 +189,25 @@ html, body {
 .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
   -webkit-transform: translateY(50vh);
           transform: translateY(50vh);
+}
+
+
+@media (max-width: 1000px)  {
+  .content-title {
+    font-size: 40px;
+  }
+  .content-subtitle1 {
+    font-size: 10px;
+  }
+
+  .content-subtitle2 {
+font-size: 10px;
+  }
+
+  .content-subtitle3 {
+font-size: 10px;
+  }
+  .P2 {
+    font-size: 25px;
+  }
 }

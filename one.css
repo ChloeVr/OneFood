@@ -58,6 +58,10 @@ html, body {
   color: black;
 }
 
+.video
+{margin: auto;
+}
+
 .background {
   background-size: cover;
   background-repeat: no-repeat;

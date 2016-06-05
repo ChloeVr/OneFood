@@ -122,6 +122,10 @@ ul li {
   background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
 }
 
+.background:nth-child(5) {
+  background-image: url(http://www.deliacreates.com/wp-content/uploads/2014/05/Geometric-Lines-Desktop-Wallpaper.png);
+}
+
 /* Set stacking context of slides */
 .background:nth-child(1) {
   z-index: 4;
@@ -203,4 +207,4 @@ ul li {
 .background.down-scroll + .background:not(.down-scroll) .content-wrapper {
   -webkit-transform: translateY(50vh);
           transform: translateY(50vh);
-} 
+}
